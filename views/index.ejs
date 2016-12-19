@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/materialize.css">
-        <title>Contact Demo</title>
+        
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/searchBar.css">
+        <link rel="stylesheet" href="css/googleMaps.css">
+        <title>Flickr Search</title>
     </head>
     <body>
-        <a href="/show-map">Show Map</a>
-        <h1>Contact form demo</h1>
-        <div class="row">
-            <form class="col s12" method="POST" action="/contact">
-                <div class="row">
-                    <div class="input-field col s6">
-                    <input placeholder="First Name" name="firstName" id="firstName" type="text" class="validate" required>
-                    <label for="first_name">First Name</label>        
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                    <input placeholder="Last Name" name="lastName" id="lastName" type="text" class="validate" required>
-                    <label for="last_name">Last Name</label>        
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                    <input placeholder="Email" name="email" id="email" type="email" class="validate" required>
-                    <label for="email">Email</label>        
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                    <input placeholder="Message" name="message" id="message" type="text" class="validate" required>
-                    <label for="message">Message</label>        
-                </div>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+         <a href="/show-map">Show Map</a>
+      <input type="text" name="search" placeholder="Search..">
+       <button class="btn waves-effect waves-light" type="submit" name="action">Show me photos!
                 </button>
-            </form>
-        </div>
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/materialize.js"></script>
+
+ <h1>Gaze</h1>
+    <h3> What do you want to gaze at today? </h3>
+   
+    <script src="js/jquery-3.1.1.min.js"> </script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+        
     </body>
 </html>
