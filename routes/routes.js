@@ -7,7 +7,7 @@ const indexController = require("../controllers/indexController");
 //We are calling a function on router in this case .get(), which is the HTTP verb, and that takes 2 arguments.
 //1 is the path (from the url), the 2nd is the function to call
 router.get("/", indexController.showIndex);
-router.get("/show-map", indexController.showMap);
+// router.get("/show-map", indexController.showMap);
 
 //This just exports the router object so that it can be used elsewhere
 module.exports = router;

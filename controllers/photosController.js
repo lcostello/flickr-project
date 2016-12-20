@@ -1,4 +1,4 @@
-const Photo = require("../lib/flickr.js");
+const Photo = require("../lib/flickr");
 
 class photosController {
     static showPhotos (req,res){

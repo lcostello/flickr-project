@@ -13,13 +13,13 @@ class Data {
             this.title = obj.title;
         }
 
-        if (obj.latitude <= 0) {
+        if (obj.latitude == "0") {
             throw new Error("Cannot display photo without a valid latitude value");
         } else {
             this.latitude = obj.latitude;
         }
 
-        if (obj.longitude <= 0) {
+        if (obj.longitude == "0") {
             throw new Error("Cannot display photo without a valid longitude value");
         } else {
             this.longitude = obj.longitude;
@@ -32,4 +32,5 @@ class Data {
         }
     }
 }
-    module.exports = Data;
+
+module.exports = Data;

@@ -28,16 +28,19 @@ $(() => {
             zoom: 12,
             center: uluru
         });
-        // let markerData = data.result;
-        // for (let i in markerData) {
-        //     console.log(markerData[i].latitude);
-        //     var pos = new google.maps.LatLng(markerData[i].latitude, markerData[i].longitude);
-        //     markers [i] = new google.maps.Marker({
-        //         position: pos,
-        //         map: map
-        //     });
+        let markerData = data.result;
+        for (let i in markerData) {
+            console.log(markerData[i].latitude);
+            var pos = new google.maps.LatLng(markerData[i].latitude, markerData[i].longitude);
+            markers [i] = new google.maps.Marker({
+                position: pos,
+                map: map
 
-        // }
+
+
+            });
+
+        }
     }
 
 });
