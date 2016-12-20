@@ -4,7 +4,7 @@ class photosController {
     static showPhotos (req,res){
         res.render("showPhotos");
     }
-static getAllPhotos(req,res){
+static getAllPhotos(req,res){      
     Photo.doFetchPhotos()
     .then(result => {
         res.status(200).send({

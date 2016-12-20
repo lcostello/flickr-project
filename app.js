@@ -1,9 +1,8 @@
 //NPM Modules - No relative path as they are in node_modules
 const express = require("express");
 const bodyParser = require("body-parser");
-
-const routes = require("./routes/routes");
 const app = express();
+const routes = require("./routes/routes");
 const photoRoutes = require("./routes/photos");
 
 //View Engine

@@ -1,12 +1,23 @@
 $(() => {
 
-    $.ajax({
-        url: `/photos`,
-        method: 'GET'
+    $("#myButton").click((e) => {
+        e.preventDefault();
+
+        $.ajax({
+            url: `/search`,
+            method: 'POST',
+            data: {
+                query: $("#searchBar").val()
+            }
+        })
+            .then((data) => {
+                initMap(data);
+            });
     })
-        .then((data) => {
-            initMap(data);
-        });
+
+    // setTimeout(() => {
+    //         initMap([]);
+    // }, 2000);
 
     function initMap(data) {
         console.log(data);
@@ -17,28 +28,17 @@ $(() => {
             zoom: 12,
             center: uluru
         });
-        let markerData = data.result;
-        for (let i in markerData) {
-            console.log(markerData[i].latitude);
-            var pos = new google.maps.LatLng(markerData[i].latitude, markerData[i].longitude);
-            markers [i] = new google.maps.Marker({
-                position: pos,
-                map: map
-            });
+        // let markerData = data.result;
+        // for (let i in markerData) {
+        //     console.log(markerData[i].latitude);
+        //     var pos = new google.maps.LatLng(markerData[i].latitude, markerData[i].longitude);
+        //     markers [i] = new google.maps.Marker({
+        //         position: pos,
+        //         map: map
+        //     });
 
-        }
+        // }
     }
 
 });
 
-
-    // $.ajax({
-    //     url: `/search`,
-    //     method: 'POST',
-    //     data: {
-    //         query: $("#searchBar").val()
-    //     }
-    // })
-    //     .then((data) => {
-    //         initMap(data);
-    //     });
