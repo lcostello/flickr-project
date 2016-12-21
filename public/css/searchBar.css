@@ -1,12 +1,82 @@
-.input[type=text] {
-    width: 130px;
+/*/*.input[type=text] {
+    /*width: 50%;
     -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;*/
     
-}
+/*}*/
 
-/* When the input field gets focus, change its width to 100% */
+ /*When the input field gets focus, change its width to 100% 
 input[type=text]:focus {
-    width: 100%;
+    width: 50%;
+}*/
+
+/*#banner {
+    background-color: #EEE8AA;
+}*/
+
+#gaze {
+    position: relative;
+        top: 50%;
+    left: 50%;
+    /*margin-top: -50px;*/
+    margin-left: -230px;
 }
 
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#searchBar {
+   background-color: mintcream;
+   text-align: center;
+}
+
+#search {
+    margin-left: 500px;
+}
+
+
+#myButton {
+    
+    text-decoration: none;
+  color: #fff;
+  background-color: #737CA1;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.btn {
+    background-color:pink;
+     }
+
+ 
+@media only screen and (max-width: 900px) {
+
+	.home h1 {
+		font-size:200%;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+
+	.home h1 {
+		font-size:190%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+
+	.home h1 {
+		font-size:150%;
+	}
+}
