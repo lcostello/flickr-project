@@ -32,29 +32,42 @@ $(() => {
         });
 
         let markerData = data.result;
-        let infowindow = new google.maps.InfoWindow;
 
         for (let i in markerData) {
             console.log(markerData[i].latitude);
             var pos = new google.maps.LatLng(markerData[i].latitude, markerData[i].longitude);
+            // var imageURL= "http://farm" + data.farm + ".static.flickr.com/" + data.server + "/" + data.id + "_" + data.secret + "_m.jpg"; or_b instead???
+            
             //When you call the function pass in the image URL
-            createMarker(pos, markerData[i].title);
+            createMarker(pos, markerData[i].title,markerData[i].url_l);   
+            // markerData[i].imageURL do i need to add this to above line of code?
+           
         }
     }
 
     //You need to pass the photo image URL INTO this function
-    function createMarker(pos, t) {
+    function createMarker(pos, t, url_l) {
         var marker = new google.maps.Marker({       
             position: pos, 
             map: map,  // google.maps.Map 
-            title: t      
+            title: t
         }); 
+
+        let contentString = `<img src="${url_l}" />`;
+
+        let infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
         google.maps.event.addListener(marker, 'click', function() { 
             //Trigger a Modal Window here showing the photo
-            alert("I am marker " + marker.title); 
+            infowindow.open(map, marker);
         }); 
+        
         return marker;  
     }
 
 });
+
+
 
