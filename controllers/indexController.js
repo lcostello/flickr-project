@@ -3,11 +3,11 @@
 
 class Index {
     //This method is available externally to this file as we are exporting it down below*
-    static showIndex(req,res){
+    static showIndex(req, res) {
         res.render("index");
     }
 
-    static showMap(req,res){
+    static showMap(req, res) {
         res.render("show-map");
     }
 }

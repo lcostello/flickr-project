@@ -6,7 +6,7 @@ const routes = require("./routes/routes");
 const photoRoutes = require("./routes/photos");
 
 //View Engine
-app.set('view engine' , 'ejs');
+app.set('view engine', 'ejs');
 
 //Middleware
 app.use(bodyParser.json());
