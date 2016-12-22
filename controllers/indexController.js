@@ -6,8 +6,7 @@ class Index {
     static showIndex(req, res) {
         res.render("index");
     }
-
-    static showMap(req, res) {
+     static showMap(req, res) {
         res.render("show-map");
     }
 }
