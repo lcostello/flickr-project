@@ -18,7 +18,7 @@ $(() => {
                 query: $("#searchBar").val()
             }
         })
-             .then((data) => {
+            .then((data) => {
                 initMap(data);
             });
     })
@@ -47,7 +47,7 @@ $(() => {
     function createMarker(pos, t, url_l) {
         var marker = new google.maps.Marker({
             position: pos,
-            map: map, 
+            map: map,
             title: t
         });
 
