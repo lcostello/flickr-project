@@ -1,12 +1,13 @@
 
   #map {
     height: 100%;
+    width: 1250px;
+    text-align: center;
   }
   html, body {
     height: 80%;
-    margin: 0;
-    padding-left: 3%;
-    padding-right: 3%;
+
+
     
   }
 

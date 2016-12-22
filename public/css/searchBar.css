@@ -1,3 +1,9 @@
+ @font-face { 
+     font-family: 'PeepsFont'; 
+ src: url('../fonts/peeps.ttf'); }
+body {
+    background-color: #D5F5E3;
+}
 #gaze {
     position: relative;
     top: 50%;
@@ -5,63 +11,56 @@
     margin-left: -230px;
 }
 
+#gazetwo {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    margin-left: 530px;
+}
+.banner {
+    position: relative;
+}
+#bannermain {
+    width: 100%;
+    height: 350px;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
 h1 {
-    text-align: center;
+    font-family: 'PeepsFont';
+    margin-bottom: 0%;
+    position: absolute;
+     display: inline-block;
+     font-size: 170px;
+     padding-left: 200px;
+     padding-top: 40px;
+     color: black;
 }
 
 p {
-    text-align: center;
+    font-family: 'PeepsFont';
+    margin-bottom: 0%;
+    position: absolute;
+     display: inline-block;
+     font-size: 170px;
+     padding-left: 200px;
+     padding-top: 250px;
 }
 
 h3 {
     text-align: center;
-}
-/*input:not([type]), 
-input[type=text], 
-input[type=password], 
-input[type=email], 
-input[type=url], 
-input[type=time], 
-input[type=date], 
-input[type=datetime], 
-input[type=datetime-local],
-input[type=tel], 
-input[type=number], 
-input[type=search],
-textarea.materialize-textarea {
-
-    border-bottom: none;
-   
-}
-
-input:not([type]):focus:not([readonly]),
-input[type=text]:focus:not([readonly]),
-input[type=password]:focus:not([readonly]),
-input[type=email]:focus:not([readonly]),
-input[type=url]:focus:not([readonly]),
-input[type=time]:focus:not([readonly]),
-input[type=date]:focus:not([readonly]),
-input[type=datetime]:focus:not([readonly]),
-input[type=datetime-local]:focus:not([readonly]),
-input[type=tel]:focus:not([readonly]),
-input[type=number]:focus:not([readonly]),
-input[type=search]:focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: none;
-    /*border-bottom: 1px solid #A6D0F9!important;*/
-    box-shadow: none;
-}
-
-#searchBar {
-   background-color:white;
-   text-align: center;
-   height: 30px;
-   color: black;
-   /*border: 1px solid black;*/
+    font-size: 20px;
 }
 
 #search {
-    margin-left: 450px;
+    margin-left: 510px;
+    display: inline-block;
+}
+
+#searchBar {
+      border: 1px solid #48C9B0;
+      color: green;
 }
 
 #myButton {
@@ -73,6 +72,29 @@ textarea.materialize-textarea:focus:not([readonly]) {
   transition: .2s ease-out;
   cursor: pointer;
   /*height: 32px;*/
+}
+h2 {
+    font-family: 'PeepsFont';
+    text-align: center;
+}
+p {
+    font-size: 25px;
+}
+#socialButtons {
+    text-align: center;
+    background-color: #48C9B0;
+}
+
+.icon {
+    padding: 2%;
+}
+
+#mainfooter {
+    width: 100%;
+}
+footer {
+    width: 100%;
+
 }
  @media only screen and (max-width: 900px) {
 
