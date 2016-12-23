@@ -59,19 +59,18 @@ h3 {
 }
 
 #searchBar {
-      border: 1px solid #48C9B0;
-      color: green;
+      border: 1px solid #97D6B2;
+      color: #97D6B2;
 }
 
 #myButton {
   text-decoration: none;
   color: black;
-  background-color:#48C9B0 ;
+  background-color:#97D6B2 ;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
   cursor: pointer;
-  /*height: 32px;*/
 }
 h2 {
     font-family: 'PeepsFont';
@@ -82,7 +81,7 @@ p {
 }
 #socialButtons {
     text-align: center;
-    background-color: #48C9B0;
+    background-color: #97D6B2;
 }
 
 .icon {

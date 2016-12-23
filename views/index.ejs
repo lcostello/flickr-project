@@ -2,10 +2,9 @@
 <html>
 
 <head>
-
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="css/searchBar.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/googleMaps.css">
     <title>Flickr Search</title>
 </head>
@@ -17,24 +16,29 @@
         <img id="bannermain" src="img/banner.jpg">
     </div>
     <h3> What do you want to Gaze at today? </h3>
+    <!-- start of search bar and button -->
     <div id="search">
         <input id="searchBar" type="text" name="search" placeholder="Search.." style="width: 200px; height: 30px">
-<button id="myButton" class="btn waves-effect waves-light" type="submit" name="action"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-</div>
+        <button id="myButton" class="btn waves-effect waves-light" type="submit" name="action"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+    </div>
+<!--end of seaerch bar and button -->
+<!-- map -->
 <div class="container" id="map"></div>
+<!-- end of map -->
+<!-- start of footer -->
 <div id="mainfooter">
     <footer>
         <h2> Gaze </h2>
-        <h3> Created by Lauren Costello © Gaze 2016. </h3>
 </div>
+<!-- social media buttons -->
 <div id="socialButtons">
     <a> <img class="icon" src="img/facebook.png" alt="facebook"> </a>
     <a> <img class="icon" src="img/twitter.png" alt="twitter"> </a>
     <a> <img class="icon" src="img/flickr.png" alt="flickr"> </a>
+    <h3> Created by Lauren Costello © Gaze 2016. </h3>
 </div>
 </footer>
-
-
+<!-- of footer -->
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnwIa1EiQnYwNzmxiKXbPRPPO8DzgeOog"></script>
